@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#etchDiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 512px;
+    height: 512px;
+}
+
+.pixel {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+}
