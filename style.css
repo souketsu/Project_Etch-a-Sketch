@@ -1,19 +1,29 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
+/* 网格容器样式 */
 #etchDiv {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 512px;
     height: 512px;
+    border: 1px solid #333;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-.pixel {
-    width: 20px;
-    height: 20px;
-    border: 1px solid white;
+.row {
+    display: flex;
+    flex-grow: 1;
 }
+
+/* 像素格子样式 */
+.pixel {
+    flex-grow: 1;
+    background-color: transparent;
+    border: 1px solid #eee;
+}
+
+.drawn {
+    background-color: black;
+}
+
